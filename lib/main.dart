@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:voter/core/routing/app_router.dart';
 import 'package:voter/core/routing/routes.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(Voter(appRouter: AppRouter()));
@@ -20,7 +21,15 @@ class Voter extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'voter',
+        locale: Locale('ar'),
+        localizationsDelegates: [
+          GlobalMaterialLocalizations.delegate,
+          GlobalWidgetsLocalizations.delegate,
+          GlobalCupertinoLocalizations.delegate,
+        ],
+        supportedLocales: [Locale('ar')],
         theme: ThemeData(
+          fontFamily: 'Cairo',
           brightness: Brightness.light,
           scaffoldBackgroundColor: Colors.transparent,
           appBarTheme: AppBarTheme(
