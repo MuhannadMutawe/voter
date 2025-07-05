@@ -19,7 +19,35 @@ class TextStyles{
       fontFamily: 'Cairo'
   );
 
-  static TextStyle font22WhiteMedium = TextStyle(
+  static TextStyle font14Block54Normal = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeightHelper.normal,
+      color: Colors.black54,
+      fontFamily: 'Cairo'
+  );
+
+  static TextStyle font14BlockNormal = TextStyle(
+      fontSize: 14.sp,
+      fontWeight: FontWeightHelper.normal,
+      color: Colors.black,
+      fontFamily: 'Cairo'
+  );
+
+  static TextStyle font16BlockMedium = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: Colors.black,
+      fontFamily: 'Cairo'
+  );
+
+  static TextStyle font20BlackMedium = TextStyle(
+      fontSize: 20.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: Colors.black,
+      fontFamily: 'Cairo'
+  );
+
+  static TextStyle font20WhiteMedium = TextStyle(
       fontSize: 20.sp,
       fontWeight: FontWeightHelper.medium,
       color: Colors.white,
