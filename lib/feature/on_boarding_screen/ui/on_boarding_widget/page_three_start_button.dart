@@ -1,12 +1,11 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:voter/core/helper/navigator_extension.dart';
 import 'package:voter/core/routing/routes.dart';
 import 'package:voter/core/theming/text_styles.dart';
-import 'package:voter/core/widget/app_elivated_button.dart';
 
 import '../../../../core/helper/spacing.dart';
+import '../../../../core/widget/app_elivated_button.dart';
 
 class PageThreeStartButton extends StatelessWidget {
   const PageThreeStartButton({super.key});
@@ -37,7 +36,7 @@ class PageThreeStartButton extends StatelessWidget {
                   color: Color(0xff6FB3E0),
                 ),
                 recognizer: TapGestureRecognizer()
-                  ..onTap = (){}
+                  ..onTap = () => context.pushNamed(Routes.signupScreen),
               ),
             ],
           ),

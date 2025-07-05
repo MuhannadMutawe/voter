@@ -19,7 +19,7 @@ class PageTwo extends StatelessWidget {
           PageIndicator(page: 1,),
           verticalSpacing(40),
           PageTitleAndSubtitle(
-            title: 'كيف يعمل البرنامج',
+            title: 'كيف يعمل ',
             titleExtension: ' البرنامج',
             subTitle: 'هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات.',
           ),

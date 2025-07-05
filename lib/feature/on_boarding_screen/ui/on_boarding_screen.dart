@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:voter/core/helper/navigator_extension.dart';
-import 'package:voter/core/helper/spacing.dart';
-import 'package:voter/core/routing/app_router.dart';
-import 'package:voter/core/theming/app_colors.dart';
-import 'package:voter/core/widget/scaffold_background.dart';
 import 'package:voter/feature/on_boarding_screen/ui/on_boarding_pages/page_one.dart';
 import 'package:voter/feature/on_boarding_screen/ui/on_boarding_pages/page_three.dart';
 import 'package:voter/feature/on_boarding_screen/ui/on_boarding_pages/page_two.dart';
 
-import '../../../core/routing/routes.dart';
+import '../../../core/widget/scaffold_background.dart';
 import 'on_boarding_widget/page_skip_buttons.dart';
 
 class OnBoardingScreen extends StatefulWidget {

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:voter/core/helper/navigator_extension.dart';
 import 'package:voter/core/helper/spacing.dart';
+import 'package:voter/core/routing/routes.dart';
 
 import '../../../../core/widget/app_elivated_button.dart';
 
@@ -14,17 +16,17 @@ class OptionsElevatedButton extends StatelessWidget {
         children: [
           AppElevatedButton(
             label: 'الدخول كمحضر',
-            onPressed: () {},
+            onPressed: () => context.pushNamed(Routes.loginScreen),
           ),
           verticalSpacing(20),
           AppElevatedButton(
             label: 'الدخول كمندوب',
-            onPressed: () {},
+            onPressed: () => context.pushNamed(Routes.loginScreen),
           ),
           verticalSpacing(20),
           AppElevatedButton(
             label: ' الدخول كمرشح',
-            onPressed: () {},
+            onPressed: () => context.pushNamed(Routes.loginScreen),
           ),
         ],
       ),

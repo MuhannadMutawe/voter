@@ -35,7 +35,7 @@ class AppElevatedButton extends StatelessWidget {
       ),
       child: Text(
         label,
-        style: TextStyles.font22WhiteMedium,
+        style: TextStyles.font20WhiteMedium,
       ),
     );
   }

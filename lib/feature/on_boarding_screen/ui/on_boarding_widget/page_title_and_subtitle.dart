@@ -38,7 +38,7 @@ class PageTitleAndSubtitle extends StatelessWidget {
         ),
         verticalSpacing(10),
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 37.w),
+          padding: EdgeInsets.symmetric(horizontal: 15.w),
           child: Text(
             subTitle,
             textAlign: TextAlign.center,
