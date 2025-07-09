@@ -3,9 +3,16 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:voter/core/routing/app_router.dart';
 import 'package:voter/core/routing/routes.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:voter/core/theming/text_styles.dart';
 
 void main() {
-  runApp(Voter(appRouter: AppRouter()));
+  WidgetsFlutterBinding.ensureInitialized();
+  ScreenUtil.ensureScreenSize();
+  runApp(
+    Voter(
+      appRouter: AppRouter(),
+    ),
+  );
 }
 
 class Voter extends StatelessWidget {
@@ -18,7 +25,7 @@ class Voter extends StatelessWidget {
     return ScreenUtilInit(
       designSize: const Size(375, 812),
       minTextAdapt: true,
-      child: MaterialApp(
+      builder:(context, child) => MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'voter',
         locale: Locale('ar'),
@@ -33,10 +40,11 @@ class Voter extends StatelessWidget {
           brightness: Brightness.light,
           scaffoldBackgroundColor: Colors.transparent,
           appBarTheme: AppBarTheme(
-            backgroundColor: Colors.transparent,
-            elevation: 0,
-            scrolledUnderElevation: 0,
-            centerTitle: true,
+              backgroundColor: Colors.transparent,
+              elevation: 0,
+              scrolledUnderElevation: 0,
+              centerTitle: true,
+              titleTextStyle: TextStyles.font20BlackSemiBold
           ),
         ),
         initialRoute: Routes.onBoardingScreen,

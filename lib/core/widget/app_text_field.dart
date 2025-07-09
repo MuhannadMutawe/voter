@@ -28,9 +28,13 @@ class AppTextField extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          ' ${title ?? ''}',
-          style: TextStyles.font16BlockMedium,
+        Visibility(
+          visible: title != null,
+          replacement: Container(),
+          child: Text(
+            ' $title',
+            style: TextStyles.font16BlockMedium,
+          ),
         ),
         verticalSpacing(8),
         TextField(
