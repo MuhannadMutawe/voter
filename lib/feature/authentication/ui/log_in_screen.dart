@@ -80,7 +80,7 @@ class _LogInScreenState extends State<LogInScreen> {
               verticalSpacing(40),
               AppElevatedButton(
                 label: 'تسجيل دخول',
-                onPressed: () => context.pushNamedAndRemoveUntil(Routes.homeScreen,predicate: (route) => route.isCurrent,),
+                onPressed: () => context.pushNamedAndRemoveUntil(Routes.candidateHomeScreen,predicate: (route) => route.isCurrent,),
               ),
             ],
           ),

@@ -21,12 +21,12 @@ class OptionsElevatedButton extends StatelessWidget {
           verticalSpacing(20),
           AppElevatedButton(
             label: 'الدخول كمندوب',
-            onPressed: () => context.pushNamed(Routes.loginScreen),
+            onPressed: () => context.pushReplacement(Routes.recordHomeScreen),
           ),
           verticalSpacing(20),
           AppElevatedButton(
             label: ' الدخول كمرشح',
-            onPressed: () => context.pushNamed(Routes.loginScreen),
+            onPressed: () => context.pushReplacement(Routes.delegateHomeScreen),
           ),
         ],
       ),

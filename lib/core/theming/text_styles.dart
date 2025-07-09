@@ -40,6 +40,27 @@ class TextStyles{
       fontFamily: 'Cairo'
   );
 
+  static TextStyle font16BlockSemiBold = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: Colors.black,
+      fontFamily: 'Cairo'
+  );
+
+  static TextStyle font12WhiteMedium = TextStyle(
+      fontSize: 12.sp,
+      fontWeight: FontWeightHelper.medium,
+      color: Colors.white,
+      fontFamily: 'Cairo'
+  );
+
+  static TextStyle font16WhiteSemiBold = TextStyle(
+      fontSize: 16.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: Colors.white,
+      fontFamily: 'Cairo'
+  );
+
   static TextStyle font20BlackMedium = TextStyle(
       fontSize: 20.sp,
       fontWeight: FontWeightHelper.medium,
@@ -47,9 +68,23 @@ class TextStyles{
       fontFamily: 'Cairo'
   );
 
+  static TextStyle font20BlackSemiBold = TextStyle(
+      fontSize: 20.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: Colors.black,
+      fontFamily: 'Cairo'
+  );
+
   static TextStyle font20WhiteMedium = TextStyle(
       fontSize: 20.sp,
       fontWeight: FontWeightHelper.medium,
+      color: Colors.white,
+      fontFamily: 'Cairo'
+  );
+
+  static TextStyle font24WhiteSemiBold = TextStyle(
+      fontSize: 24.sp,
+      fontWeight: FontWeightHelper.semiBold,
       color: Colors.white,
       fontFamily: 'Cairo'
   );
